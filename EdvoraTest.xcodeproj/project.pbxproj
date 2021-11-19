@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		589C7C7127477401007F5513 /* EdvoraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C7027477401007F5513 /* EdvoraTestApp.swift */; };
-		589C7C7327477401007F5513 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C7227477401007F5513 /* ContentView.swift */; };
+		589C7C7327477401007F5513 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C7227477401007F5513 /* LoginView.swift */; };
 		589C7C7527477402007F5513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C7C7427477402007F5513 /* Assets.xcassets */; };
 		589C7C7827477402007F5513 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C7C7727477402007F5513 /* Preview Assets.xcassets */; };
 		589C7C8227477402007F5513 /* EdvoraTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C8127477402007F5513 /* EdvoraTestTests.swift */; };
 		589C7C8C27477402007F5513 /* EdvoraTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C8B27477402007F5513 /* EdvoraTestUITests.swift */; };
 		589C7C8E27477402007F5513 /* EdvoraTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C8D27477402007F5513 /* EdvoraTestUITestsLaunchTests.swift */; };
+		589C7C9C274777A2007F5513 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C7C9B274777A2007F5513 /* Images.xcassets */; };
+		589D71BB27479211005BA0FA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589D71BA27479211005BA0FA /* Colors.xcassets */; };
+		589D71BD274796CF005BA0FA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71BC274796CF005BA0FA /* Color+Extension.swift */; };
+		589D71C127479F0F005BA0FA /* EdvoraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C027479F0F005BA0FA /* EdvoraTextField.swift */; };
+		589D71C32747A472005BA0FA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C22747A472005BA0FA /* LoginViewModel.swift */; };
+		589D71C62747C3EC005BA0FA /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C52747C3EC005BA0FA /* Validations.swift */; };
+		589D71C82747C642005BA0FA /* ValidationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C72747C642005BA0FA /* ValidationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		589C7C6D27477401007F5513 /* EdvoraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdvoraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C7C7027477401007F5513 /* EdvoraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTestApp.swift; sourceTree = "<group>"; };
-		589C7C7227477401007F5513 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		589C7C7227477401007F5513 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		589C7C7427477402007F5513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		589C7C7727477402007F5513 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		589C7C7D27477402007F5513 /* EdvoraTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdvoraTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,13 @@
 		589C7C8727477402007F5513 /* EdvoraTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdvoraTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C7C8B27477402007F5513 /* EdvoraTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTestUITests.swift; sourceTree = "<group>"; };
 		589C7C8D27477402007F5513 /* EdvoraTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		589C7C9B274777A2007F5513 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		589D71BA27479211005BA0FA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		589D71BC274796CF005BA0FA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		589D71C027479F0F005BA0FA /* EdvoraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTextField.swift; sourceTree = "<group>"; };
+		589D71C22747A472005BA0FA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		589D71C52747C3EC005BA0FA /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		589D71C72747C642005BA0FA /* ValidationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +108,14 @@
 		589C7C6F27477401007F5513 /* EdvoraTest */ = {
 			isa = PBXGroup;
 			children = (
+				589D71BF27479EDC005BA0FA /* Reusable Views */,
+				589C7C9A2747778C007F5513 /* Resources */,
 				589C7C7027477401007F5513 /* EdvoraTestApp.swift */,
-				589C7C7227477401007F5513 /* ContentView.swift */,
-				589C7C7427477402007F5513 /* Assets.xcassets */,
+				589D71C42747C18A005BA0FA /* ViewRelated */,
 				589C7C7627477402007F5513 /* Preview Content */,
+				589D71BE274796E1005BA0FA /* Extensions */,
+				589D71C52747C3EC005BA0FA /* Validations.swift */,
+				589D71C72747C642005BA0FA /* ValidationProtocol.swift */,
 			);
 			path = EdvoraTest;
 			sourceTree = "<group>";
@@ -125,6 +143,41 @@
 				589C7C8D27477402007F5513 /* EdvoraTestUITestsLaunchTests.swift */,
 			);
 			path = EdvoraTestUITests;
+			sourceTree = "<group>";
+		};
+		589C7C9A2747778C007F5513 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				589C7C7427477402007F5513 /* Assets.xcassets */,
+				589C7C9B274777A2007F5513 /* Images.xcassets */,
+				589D71BA27479211005BA0FA /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		589D71BE274796E1005BA0FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				589D71BC274796CF005BA0FA /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		589D71BF27479EDC005BA0FA /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				589D71C027479F0F005BA0FA /* EdvoraTextField.swift */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		589D71C42747C18A005BA0FA /* ViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				589D71C22747A472005BA0FA /* LoginViewModel.swift */,
+				589C7C7227477401007F5513 /* LoginView.swift */,
+			);
+			path = ViewRelated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589C7C9C274777A2007F5513 /* Images.xcassets in Resources */,
+				589D71BB27479211005BA0FA /* Colors.xcassets in Resources */,
 				589C7C7827477402007F5513 /* Preview Assets.xcassets in Resources */,
 				589C7C7527477402007F5513 /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589C7C7327477401007F5513 /* ContentView.swift in Sources */,
+				589C7C7327477401007F5513 /* LoginView.swift in Sources */,
+				589D71C82747C642005BA0FA /* ValidationProtocol.swift in Sources */,
+				589D71BD274796CF005BA0FA /* Color+Extension.swift in Sources */,
+				589D71C127479F0F005BA0FA /* EdvoraTextField.swift in Sources */,
+				589D71C32747A472005BA0FA /* LoginViewModel.swift in Sources */,
+				589D71C62747C3EC005BA0FA /* Validations.swift in Sources */,
 				589C7C7127477401007F5513 /* EdvoraTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
