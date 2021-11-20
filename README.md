@@ -1,9 +1,9 @@
 # Edvora Code Test
 
-### Project Description
+## Project Description
 Login page with limited functionalities
 
-### Implemented Functionalities:
+## Implemented Functionalities:
 - UI implemented in SwiftUI
 - Validation for username
     - Username field should not allow spaces and upper case alphabets 
@@ -23,9 +23,9 @@ Login page with limited functionalities
 - All the strings displayed are written in localised format
 - Textfield and Button styles are reusable
 
-### Demo
+## Demo
 
-### Given Instructions
+## Given Instructions
 1. The given UI must be implemented using SwiftUI  
 2. The inputs fields should not be empty  
 3. Validations for email (must be a valid email)  
@@ -38,6 +38,8 @@ Login page with limited functionalities
 
 ---
 👨‍💻 Anas P
+
 ✉️ me.anasp@gmail.com
+
 📞 +91 9746241114
 

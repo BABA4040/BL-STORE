@@ -101,6 +101,7 @@
 		589C7C6427477401007F5513 = {
 			isa = PBXGroup;
 			children = (
+				58D11D5927490B9300148DC0 /* README.md */,
 				589C7C6F27477401007F5513 /* EdvoraTest */,
 				589C7C8027477402007F5513 /* EdvoraTestTests */,
 				589C7C8A27477402007F5513 /* EdvoraTestUITests */,
@@ -127,7 +128,6 @@
 				589D71CC2748D2FD005BA0FA /* LocalisedStrings.swift */,
 				589C7C9A2747778C007F5513 /* Resources */,
 				589C7C7627477402007F5513 /* Preview Content */,
-				58D11D5927490B9300148DC0 /* README.md */,
 			);
 			path = EdvoraTest;
 			sourceTree = "<group>";
