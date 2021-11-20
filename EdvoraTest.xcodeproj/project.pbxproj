@@ -21,6 +21,12 @@
 		589D71C32747A472005BA0FA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C22747A472005BA0FA /* LoginViewModel.swift */; };
 		589D71C62747C3EC005BA0FA /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C52747C3EC005BA0FA /* Validations.swift */; };
 		589D71C82747C642005BA0FA /* ValidationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71C72747C642005BA0FA /* ValidationProtocol.swift */; };
+		589D71CB2748C4E0005BA0FA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71CA2748C4E0005BA0FA /* String+Extension.swift */; };
+		589D71CD2748D2FD005BA0FA /* LocalisedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71CC2748D2FD005BA0FA /* LocalisedStrings.swift */; };
+		589D71CF2748EE3A005BA0FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71CE2748EE3A005BA0FA /* HomeView.swift */; };
+		589D71D12748F27A005BA0FA /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */; };
+		589D71D32748F360005BA0FA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71D22748F360005BA0FA /* SignupView.swift */; };
+		58D11D582748F79600148DC0 /* EdvoraButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,13 @@
 		589D71C22747A472005BA0FA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		589D71C52747C3EC005BA0FA /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		589D71C72747C642005BA0FA /* ValidationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationProtocol.swift; sourceTree = "<group>"; };
+		589D71CA2748C4E0005BA0FA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		589D71CC2748D2FD005BA0FA /* LocalisedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalisedStrings.swift; sourceTree = "<group>"; };
+		589D71CE2748EE3A005BA0FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		589D71D22748F360005BA0FA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraButtonStyle.swift; sourceTree = "<group>"; };
+		58D11D5927490B9300148DC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +121,13 @@
 		589C7C6F27477401007F5513 /* EdvoraTest */ = {
 			isa = PBXGroup;
 			children = (
-				589D71BF27479EDC005BA0FA /* Reusable Views */,
-				589C7C9A2747778C007F5513 /* Resources */,
-				589C7C7027477401007F5513 /* EdvoraTestApp.swift */,
-				589D71C42747C18A005BA0FA /* ViewRelated */,
-				589C7C7627477402007F5513 /* Preview Content */,
 				589D71BE274796E1005BA0FA /* Extensions */,
-				589D71C52747C3EC005BA0FA /* Validations.swift */,
-				589D71C72747C642005BA0FA /* ValidationProtocol.swift */,
+				589D71BF27479EDC005BA0FA /* Reusable Views */,
+				589D71D52748F708005BA0FA /* Classes */,
+				589D71CC2748D2FD005BA0FA /* LocalisedStrings.swift */,
+				589C7C9A2747778C007F5513 /* Resources */,
+				589C7C7627477402007F5513 /* Preview Content */,
+				58D11D5927490B9300148DC0 /* README.md */,
 			);
 			path = EdvoraTest;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 		589C7C9A2747778C007F5513 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				589C7C7027477401007F5513 /* EdvoraTestApp.swift */,
 				589C7C7427477402007F5513 /* Assets.xcassets */,
 				589C7C9B274777A2007F5513 /* Images.xcassets */,
 				589D71BA27479211005BA0FA /* Colors.xcassets */,
@@ -159,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				589D71BC274796CF005BA0FA /* Color+Extension.swift */,
+				589D71CA2748C4E0005BA0FA /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,8 +190,38 @@
 			children = (
 				589D71C22747A472005BA0FA /* LoginViewModel.swift */,
 				589C7C7227477401007F5513 /* LoginView.swift */,
+				589D71CE2748EE3A005BA0FA /* HomeView.swift */,
+				589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */,
+				589D71D22748F360005BA0FA /* SignupView.swift */,
 			);
 			path = ViewRelated;
+			sourceTree = "<group>";
+		};
+		589D71D42748F6E8005BA0FA /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		589D71D52748F708005BA0FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				589D71D62748F743005BA0FA /* Validations */,
+				589D71D42748F6E8005BA0FA /* Styles */,
+				589D71C42747C18A005BA0FA /* ViewRelated */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		589D71D62748F743005BA0FA /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				589D71C52747C3EC005BA0FA /* Validations.swift */,
+				589D71C72747C642005BA0FA /* ValidationProtocol.swift */,
+			);
+			path = Validations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,13 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589D71D32748F360005BA0FA /* SignupView.swift in Sources */,
+				589D71CB2748C4E0005BA0FA /* String+Extension.swift in Sources */,
+				589D71D12748F27A005BA0FA /* ForgotPasswordView.swift in Sources */,
 				589C7C7327477401007F5513 /* LoginView.swift in Sources */,
 				589D71C82747C642005BA0FA /* ValidationProtocol.swift in Sources */,
+				589D71CF2748EE3A005BA0FA /* HomeView.swift in Sources */,
 				589D71BD274796CF005BA0FA /* Color+Extension.swift in Sources */,
 				589D71C127479F0F005BA0FA /* EdvoraTextField.swift in Sources */,
+				58D11D582748F79600148DC0 /* EdvoraButtonStyle.swift in Sources */,
 				589D71C32747A472005BA0FA /* LoginViewModel.swift in Sources */,
 				589D71C62747C3EC005BA0FA /* Validations.swift in Sources */,
 				589C7C7127477401007F5513 /* EdvoraTestApp.swift in Sources */,
+				589D71CD2748D2FD005BA0FA /* LocalisedStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

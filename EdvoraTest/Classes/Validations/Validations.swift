@@ -8,6 +8,7 @@
 import Foundation
 
 /// All type of validations
+/// 
 enum ValidationType: Hashable {
     case username
     case password
@@ -42,9 +43,12 @@ extension Validations: ValidationProtocol {
     }
 
     /// Password validation
-    ///
+    /// should have 8 characters, 1 number, 1 upper case alphabet, 1 lower case alphabet
     func validatePassword() -> Bool {
-        return true
+        guard let password = validationString else { return false }
+        let passwordRegEx = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+        let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
+        return passwordPredicate.evaluate(with: password)
     }
 
     /// Email validation
@@ -52,7 +56,7 @@ extension Validations: ValidationProtocol {
     func validateEmail() -> Bool {
         guard let email = validationString else { return false }
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailPredicate.evaluate(with: email)
     }
 }

@@ -18,5 +18,7 @@ extension Color {
 
         let textfieldBackground = Color("background-text")
         let textLightForeground = Color("title-light")
+
+        let textColorBrown = Color("text-brown")
     }
 }
