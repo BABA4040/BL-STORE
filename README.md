@@ -9,9 +9,9 @@ Login page with limited functionalities
     - Username field should not allow spaces and upper case alphabets 
 - Validation for email
 - Validation for password
-    - Password should have 8 characters long
+    - Password should be atleast 8 characters long
     - Atleast 1 number
-    - Atlease 1 upper case alphabet
+    - Atleast 1 upper case alphabet
     - Atleast 1 lower case alphabet
 - App is responsive for all devices
     - Tested in:
@@ -19,8 +19,7 @@ Login page with limited functionalities
         - iPhone 13
         - iPhone 13 Pro Max
         - iPad
-- A prompt will be displayed if there any failure in validation while tap on login button
-- All the strings displayed are written in localised format
+- A prompt will be displayed if there is any failure in validation upon tapping login button
 - Textfield and Button styles are reusable
 
 ## Demo

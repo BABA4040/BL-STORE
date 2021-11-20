@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Forgot Password View
-/// This page will show when user tap `Forgotten Password` button from login
+/// This page will be displayed when user tap `Forgot Password` button from login
 ///
 struct ForgotPasswordView: View {
     var body: some View {

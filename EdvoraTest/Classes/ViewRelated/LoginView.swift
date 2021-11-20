@@ -81,8 +81,6 @@ struct LoginView: View {
                             HomeView(isLoggedOut: $isLoggedIn)
                         }
 
-                        Spacer(minLength: 30)
-
                         //=== Signup view ===//
                         HStack {
                             Text(Localisation.noAccountTitle)
@@ -98,6 +96,7 @@ struct LoginView: View {
                     }
 
                     Spacer()
+                        .frame(height: 30)
                 }
             }
         }
@@ -124,7 +123,7 @@ private extension Localisation {
     static let usernameTitle = NSLocalizedString("Username", comment: "Title for username")
     static let passwordTitle = NSLocalizedString("Password", comment: "Title for password")
     static let emailTitle = NSLocalizedString("Email", comment: "Title for email")
-    static let forgotPasswordTitle = NSLocalizedString("Forgotten password?", comment: "Title for forgot password button")
+    static let forgotPasswordTitle = NSLocalizedString("Forgot password?", comment: "Title for forgot password button")
     static let noAccountTitle = NSLocalizedString("Don’t have an account?", comment: "Title for signup label")
     static let signUpTitle = NSLocalizedString("Sign up", comment: "Title for sign up button")
 }

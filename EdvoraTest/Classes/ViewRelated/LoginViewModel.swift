@@ -99,7 +99,7 @@ private extension Localisation {
                                                              comment: "Warning message for username validation")
 
     static let passwordValidationTitle = NSLocalizedString("Enter a valid password!", comment: "Title for password alert")
-    static let passwordValidationMessage = NSLocalizedString("Username should have 8 characters long,"
+    static let passwordValidationMessage = NSLocalizedString("Password should have atleast 8 characters,"
                                                              + "\n1 number, 1 upper case alphabet"
                                                              + "\nand 1 lower case alphabet"
                                                              , comment: "Warning message for password validation")

@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Home View
-/// This page will show after successfull login
+/// This page will be shown after successfull login
 ///
 struct HomeView: View {
 
