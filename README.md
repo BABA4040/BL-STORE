@@ -24,6 +24,7 @@ Login page with limited functionalities
 - Textfield and Button styles are reusable
 
 ## Demo
+<img src="https://github.com/anas-p/Edvora-Code-Test/blob/main/Dark%20mode.PNG" width="250" height="541.03">    <img src="https://github.com/anas-p/Edvora-Code-Test/blob/main/Light%20Mode.PNG" width="250" height="541.03">    <img src="https://github.com/anas-p/Edvora-Code-Test/blob/main/RPReplay_Final1637408100.mov" width="250" height="541.03">
 
 ## Given Instructions
 1. The given UI must be implemented using SwiftUI  
@@ -42,4 +43,3 @@ Login page with limited functionalities
 ✉️ me.anasp@gmail.com
 
 📞 +91 9746241114
-
