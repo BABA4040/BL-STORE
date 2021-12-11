@@ -66,9 +66,11 @@ struct LoginView: View {
 
                         //=== Login button ===//
                         Button {
-                            if viewModel.doLoginValidation() {
-                                isLoggedIn.toggle()
-                            }
+//                            if viewModel.doLoginValidation() {
+//                                isLoggedIn.toggle()
+//                            }
+                            isLoggedIn.toggle()
+                            
                         } label: {
                             Text(Localisation.login)
                                 .frame(maxWidth: .infinity)
