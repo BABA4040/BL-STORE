@@ -12,94 +12,94 @@ import Combine
 /// This page will show when the user tap on `+` button from dashboard to create/edit new examination
 ///
 struct CreateExamView: View {
-
     @ObservedObject var viewModel = CreateExamViewModel()
 
     @State private var nextTaped: Bool = false
     @Binding var createExamTaped: Bool
 
-    @State var showsDatePicker = false
-
     var body: some View {
-        //=== Header View ===//
-        HeaderView()
+        VStack {
+            //=== Header View ===//
+            NavigationHeaderView()
 
-        ScrollView {
-            //=== Classroom with drop down ===//
-            HStack {
-                Text(Localisation.FormTitles.classroomTitle)
-                Spacer()
-                Menu {
-                    ForEach(Classroom.allCases) { classroom in
-                        Button {
-                            viewModel.selectedClassroom = classroom
-                        } label: {
-                            if classroom == viewModel.selectedClassroom {
-                                Label(classroom.name, systemImage: "checkmark")
-                            }
-                            else {
-                                Text(classroom.name)
+            ScrollView {
+                //=== Classroom with drop down ===//
+                HStack {
+                    Text(Localisation.FormTitles.classroomTitle)
+                    Spacer()
+                    Menu {
+                        ForEach(Classroom.allCases) { classroom in
+                            Button {
+                                viewModel.selectedClassroom = classroom
+                            } label: {
+                                if classroom == viewModel.selectedClassroom {
+                                    Label(classroom.name, systemImage: "checkmark")
+                                }
+                                else {
+                                    Text(classroom.name)
+                                }
                             }
                         }
+                    } label: {
+                        HStack {
+                            Text(viewModel.selectedClassroom?.name ?? Localisation.FormTitles.selectClassroomPlaceholder)
+                                .opacity(viewModel.selectedClassroom?.name == nil ? 0.6 : 1.0)
+                            Image(systemName: "chevron.down")
+                        }
                     }
-                } label: {
-                    HStack {
-                        Text(viewModel.selectedClassroom?.name ?? Localisation.FormTitles.selectClassroomPlaceholder)
-                            .opacity(viewModel.selectedClassroom?.name == nil ? 0.6 : 1.0)
-                        Image(systemName: "chevron.down")
-                    }
-                }
-                .inputFieldStyle()
-            }
-
-
-            //=== Syllabus ===//
-            HStack {
-                Text(Localisation.FormTitles.syllabusTitle)
-                Spacer()
-                TextField(Localisation.FormTitles.syllabusPlaceholder, text: $viewModel.syllabus)
                     .inputFieldStyle()
-            }
+                }
 
-            //=== Date & Time ===//
-            Group {
-                DatePicker(Localisation.FormTitles.dateTitle, selection: $viewModel.examDate, displayedComponents: .date)
-                DatePicker(Localisation.FormTitles.timeTitle, selection: $viewModel.examTime, displayedComponents: .hourAndMinute)
-            }
-            .frame(height: 44)
 
-            //=== Duration & Timeframe ===//
-            durationOrTimeFrameView(title: Localisation.FormTitles.durationTitle, HR: $viewModel.examDurationHour, MN: $viewModel.examDurationMinute)
-            durationOrTimeFrameView(title: Localisation.FormTitles.timeframeTitle, HR: $viewModel.examTimeframeHour, MN: $viewModel.examTimeframeMinute)
-
-            Group {
-                //=== Total Marks ===//
+                //=== Syllabus ===//
                 HStack {
-                    Text(Localisation.FormTitles.totalMarksTitle)
+                    Text(Localisation.FormTitles.syllabusTitle)
                     Spacer()
-                    TextField("", text: $viewModel.totalMark)
-                        .frame(width: 116)
+                    TextField(Localisation.FormTitles.syllabusPlaceholder, text: $viewModel.syllabus)
                         .inputFieldStyle()
                 }
 
-                //=== Category ===//
-                HStack {
-                    Text(Localisation.FormTitles.categoryTitle)
-                    Spacer()
-                    TextField(Localisation.FormTitles.categoryPlaceholder, text: $viewModel.category)
-                        .inputFieldStyle()
+                //=== Date & Time ===//
+                Group {
+                    DatePicker(Localisation.FormTitles.dateTitle, selection: $viewModel.examDate, displayedComponents: .date)
+                    DatePicker(Localisation.FormTitles.timeTitle, selection: $viewModel.examTime, displayedComponents: .hourAndMinute)
                 }
+                .frame(height: 44)
+
+                //=== Duration & Timeframe ===//
+                durationOrTimeFrameView(title: Localisation.FormTitles.durationTitle, HR: $viewModel.examDurationHour, MN: $viewModel.examDurationMinute)
+                durationOrTimeFrameView(title: Localisation.FormTitles.timeframeTitle, HR: $viewModel.examTimeframeHour, MN: $viewModel.examTimeframeMinute)
+
+                Group {
+                    //=== Total Marks ===//
+                    HStack {
+                        Text(Localisation.FormTitles.totalMarksTitle)
+                        Spacer()
+                        TextField("", text: $viewModel.totalMark)
+                            .frame(width: 116)
+                            .inputFieldStyle()
+                    }
+
+                    //=== Category ===//
+                    HStack {
+                        Text(Localisation.FormTitles.categoryTitle)
+                        Spacer()
+                        TextField(Localisation.FormTitles.categoryPlaceholder, text: $viewModel.category)
+                            .inputFieldStyle()
+                    }
+                }
+                .frame(height: 44)
             }
-            .frame(height: 44)
+            .padding(20)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
-        .padding(20)
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+
     }
 
-    /// Header view
+    /// Navigation Header
     ///
-    @ViewBuilder private func HeaderView() -> some View {
+    @ViewBuilder private func NavigationHeaderView() -> some View {
         HStack {
             Button {
                 createExamTaped.toggle()
@@ -163,7 +163,8 @@ struct CreateExamView_Previews: PreviewProvider {
 }
 
 // MARK: - Private Modifiers
-/// Modifier for inputfields
+
+/// Modifier for input fields
 ///
 private struct InputFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
@@ -175,6 +176,7 @@ private struct InputFieldModifier: ViewModifier {
     }
 }
 
+// MARK: View extensions
 private extension View {
     /// Inputfield style
     ///
@@ -182,7 +184,6 @@ private extension View {
         self.modifier(InputFieldModifier())
     }
 }
-
 
 // MARK: - Localisation
 private extension Localisation {

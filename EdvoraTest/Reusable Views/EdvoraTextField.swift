@@ -90,7 +90,7 @@ struct EdvoraTextField: EdvoraTextFieldProtocol, View {
                             isVisiblePassword.toggle()
                         } label: {
                             Image(systemName: isVisiblePassword ? "eye.fill" : "eye.slash.fill")
-                                .foregroundColor(Color.ui.textColorBrown)
+                                .foregroundColor(Color.ui.lightBrown)
                                 .imageScale(.large)
                         }
                         .padding()
