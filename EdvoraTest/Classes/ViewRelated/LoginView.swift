@@ -55,7 +55,7 @@ struct LoginView: View {
                             Spacer()
                             NavigationLink(destination: ForgotPasswordView()) {
                                 Text(Localisation.forgotPasswordTitle)
-                                    .foregroundColor(Color.ui.textColorBrown)
+                                    .foregroundColor(Color.ui.lightBrown)
                                     .font(.system(size: 15, weight: .semibold))
                             }
                         }
@@ -66,16 +66,18 @@ struct LoginView: View {
 
                         //=== Login button ===//
                         Button {
-                            if viewModel.doLoginValidation() {
-                                isLoggedIn.toggle()
-                            }
+//                            if viewModel.doLoginValidation() {
+//                                isLoggedIn.toggle()
+//                            }
+                            isLoggedIn.toggle()
+                            
                         } label: {
                             Text(Localisation.login)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 52)
                                 .padding([.leading, .trailing], 36)
                         }
-                        .buttonStyle(EdvoraButtonStyle())
+                        .buttonStyle(FilledBrown())
                         .padding([.leading, .trailing], 36)
                         .fullScreenCover(isPresented: $isLoggedIn) {
                             HomeView(isLoggedOut: $isLoggedIn)
@@ -89,7 +91,7 @@ struct LoginView: View {
 
                             NavigationLink(destination: SignupView()) {
                                 Text(Localisation.signUpTitle)
-                                    .foregroundColor(Color.ui.textColorBrown)
+                                    .foregroundColor(Color.ui.lightBrown)
                                     .font(.system(size: 15, weight: .semibold))
                             }
                         }

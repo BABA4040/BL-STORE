@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58618D5A2764820F006F07F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618D592764820F006F07F0 /* Constants.swift */; };
+		58618D5C2764876E006F07F0 /* CreateExamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58618D5B2764876E006F07F0 /* CreateExamViewModel.swift */; };
+		589800F5276514FE00D12736 /* ExamDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589800F4276514FE00D12736 /* ExamDetailsViewModel.swift */; };
+		589800F72766F6CB00D12736 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589800F62766F6CB00D12736 /* View+Extension.swift */; };
+		589800F92766F80300D12736 /* QuestionChoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589800F82766F80300D12736 /* QuestionChoicesView.swift */; };
+		589800FC2767229200D12736 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589800FB2767229200D12736 /* Exam.swift */; };
 		589C7C7127477401007F5513 /* EdvoraTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C7027477401007F5513 /* EdvoraTestApp.swift */; };
 		589C7C7327477401007F5513 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C7C7227477401007F5513 /* LoginView.swift */; };
 		589C7C7527477402007F5513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C7C7427477402007F5513 /* Assets.xcassets */; };
@@ -26,7 +32,10 @@
 		589D71CF2748EE3A005BA0FA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71CE2748EE3A005BA0FA /* HomeView.swift */; };
 		589D71D12748F27A005BA0FA /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */; };
 		589D71D32748F360005BA0FA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D71D22748F360005BA0FA /* SignupView.swift */; };
-		58D11D582748F79600148DC0 /* EdvoraButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */; };
+		58AB558727631F4600A2B3D0 /* CreateExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB558627631F4600A2B3D0 /* CreateExamView.swift */; };
+		58AB558A2763533800A2B3D0 /* EdvoraStyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB55892763533800A2B3D0 /* EdvoraStyleModifiers.swift */; };
+		58AB558C2763584000A2B3D0 /* ExamDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB558B2763583F00A2B3D0 /* ExamDetailsView.swift */; };
+		58D11D582748F79600148DC0 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D11D572748F79600148DC0 /* ButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58618D592764820F006F07F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58618D5B2764876E006F07F0 /* CreateExamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExamViewModel.swift; sourceTree = "<group>"; };
+		589800F4276514FE00D12736 /* ExamDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailsViewModel.swift; sourceTree = "<group>"; };
+		589800F62766F6CB00D12736 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		589800F82766F80300D12736 /* QuestionChoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionChoicesView.swift; sourceTree = "<group>"; };
+		589800FB2767229200D12736 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
 		589C7C6D27477401007F5513 /* EdvoraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdvoraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C7C7027477401007F5513 /* EdvoraTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTestApp.swift; sourceTree = "<group>"; };
 		589C7C7227477401007F5513 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -69,7 +84,10 @@
 		589D71CE2748EE3A005BA0FA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		589D71D22748F360005BA0FA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraButtonStyle.swift; sourceTree = "<group>"; };
+		58AB558627631F4600A2B3D0 /* CreateExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExamView.swift; sourceTree = "<group>"; };
+		58AB55892763533800A2B3D0 /* EdvoraStyleModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraStyleModifiers.swift; sourceTree = "<group>"; };
+		58AB558B2763583F00A2B3D0 /* ExamDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamDetailsView.swift; sourceTree = "<group>"; };
+		58D11D572748F79600148DC0 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		58D11D5927490B9300148DC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		589800FA2767225000D12736 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				589800FB2767229200D12736 /* Exam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		589C7C6427477401007F5513 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +148,7 @@
 		589C7C6F27477401007F5513 /* EdvoraTest */ = {
 			isa = PBXGroup;
 			children = (
+				589800FA2767225000D12736 /* Model */,
 				589D71BE274796E1005BA0FA /* Extensions */,
 				589D71BF27479EDC005BA0FA /* Reusable Views */,
 				589D71D52748F708005BA0FA /* Classes */,
@@ -173,6 +200,7 @@
 			children = (
 				589D71BC274796CF005BA0FA /* Color+Extension.swift */,
 				589D71CA2748C4E0005BA0FA /* String+Extension.swift */,
+				589800F62766F6CB00D12736 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +221,11 @@
 				589D71CE2748EE3A005BA0FA /* HomeView.swift */,
 				589D71D02748F27A005BA0FA /* ForgotPasswordView.swift */,
 				589D71D22748F360005BA0FA /* SignupView.swift */,
+				58AB558627631F4600A2B3D0 /* CreateExamView.swift */,
+				58AB558B2763583F00A2B3D0 /* ExamDetailsView.swift */,
+				58618D5B2764876E006F07F0 /* CreateExamViewModel.swift */,
+				589800F4276514FE00D12736 /* ExamDetailsViewModel.swift */,
+				589800F82766F80300D12736 /* QuestionChoicesView.swift */,
 			);
 			path = ViewRelated;
 			sourceTree = "<group>";
@@ -200,7 +233,7 @@
 		589D71D42748F6E8005BA0FA /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				58D11D572748F79600148DC0 /* EdvoraButtonStyle.swift */,
+				58D11D572748F79600148DC0 /* ButtonStyles.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -208,9 +241,11 @@
 		589D71D52748F708005BA0FA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58AB55882763531400A2B3D0 /* View Modifiers */,
 				589D71D62748F743005BA0FA /* Validations */,
 				589D71D42748F6E8005BA0FA /* Styles */,
 				589D71C42747C18A005BA0FA /* ViewRelated */,
+				58618D592764820F006F07F0 /* Constants.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -222,6 +257,14 @@
 				589D71C72747C642005BA0FA /* ValidationProtocol.swift */,
 			);
 			path = Validations;
+			sourceTree = "<group>";
+		};
+		58AB55882763531400A2B3D0 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				58AB55892763533800A2B3D0 /* EdvoraStyleModifiers.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,16 +399,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589800FC2767229200D12736 /* Exam.swift in Sources */,
 				589D71D32748F360005BA0FA /* SignupView.swift in Sources */,
+				58618D5A2764820F006F07F0 /* Constants.swift in Sources */,
+				589800F92766F80300D12736 /* QuestionChoicesView.swift in Sources */,
+				589800F72766F6CB00D12736 /* View+Extension.swift in Sources */,
 				589D71CB2748C4E0005BA0FA /* String+Extension.swift in Sources */,
 				589D71D12748F27A005BA0FA /* ForgotPasswordView.swift in Sources */,
 				589C7C7327477401007F5513 /* LoginView.swift in Sources */,
 				589D71C82747C642005BA0FA /* ValidationProtocol.swift in Sources */,
+				58AB558727631F4600A2B3D0 /* CreateExamView.swift in Sources */,
 				589D71CF2748EE3A005BA0FA /* HomeView.swift in Sources */,
 				589D71BD274796CF005BA0FA /* Color+Extension.swift in Sources */,
+				58AB558A2763533800A2B3D0 /* EdvoraStyleModifiers.swift in Sources */,
+				589800F5276514FE00D12736 /* ExamDetailsViewModel.swift in Sources */,
 				589D71C127479F0F005BA0FA /* EdvoraTextField.swift in Sources */,
-				58D11D582748F79600148DC0 /* EdvoraButtonStyle.swift in Sources */,
+				58618D5C2764876E006F07F0 /* CreateExamViewModel.swift in Sources */,
+				58D11D582748F79600148DC0 /* ButtonStyles.swift in Sources */,
 				589D71C32747A472005BA0FA /* LoginViewModel.swift in Sources */,
+				58AB558C2763584000A2B3D0 /* ExamDetailsView.swift in Sources */,
 				589D71C62747C3EC005BA0FA /* Validations.swift in Sources */,
 				589C7C7127477401007F5513 /* EdvoraTestApp.swift in Sources */,
 				589D71CD2748D2FD005BA0FA /* LocalisedStrings.swift in Sources */,

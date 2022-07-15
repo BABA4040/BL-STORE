@@ -12,37 +12,51 @@ import SwiftUI
 ///
 struct HomeView: View {
 
+    @State private var createExamTaped: Bool = false
     @Binding var isLoggedOut: Bool
 
     var body: some View {
-        VStack(spacing: 20) {
+        NavigationView {
+            VStack(spacing: 20) {
 
-            Spacer()
+                //=== Header View ===//
+                HeaderView()
 
-            Group {
-                Text("😎")
-                    .font(.system(size: 60))
-                Text("Successfully logged in")
-                    .font(.system(size: 30))
+                Spacer()
             }
-
-            Spacer()
-
-            //=== Logout button ===//
-            Button {
-                isLoggedOut.toggle()
-            } label: {
-                Text(Localisation.logout)
-                    .frame(maxWidth: .infinity)
-                    .frame(width: 200, height: 52)
-            }
-            .buttonStyle(EdvoraButtonStyle())
-
-            Spacer()
-                .frame(height: 50)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationViewStyle(.stack)
+            .edgesIgnoringSafeArea(.all)
         }
-        .navigationTitle("Forgot Password")
-        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    /// Header view
+    ///
+    @ViewBuilder private func HeaderView() -> some View {
+        HStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("Hello Anas")
+                        .font(.system(size: 28))
+                    Text("Welcome to your **Dashboard**")
+                        .font(.system(size: 14))
+                }
+                .textStyle()
+
+                Spacer()
+
+                NavigationLink(isActive: $createExamTaped) {
+                    CreateExamView(createExamTaped: $createExamTaped)
+                } label: {
+                    Image(systemName: "person.circle.fill")
+                        .font(.largeTitle)
+                }
+                .padding()
+            }
+            Spacer()
+        }
+        .padding()
+        .frame(height: 200)
     }
 }
 
